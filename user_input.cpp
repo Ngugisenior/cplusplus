@@ -24,14 +24,19 @@ int main(){
         std::cout << "Please enter your Last name!\n";
         //std::cin >> last_name;
         std::getline(std::cin, last_name);
-        std::cout << "Please enter your date of birth (DD/MM/YY)!\n";
-        //std::cin >> date_of_birth;
-        std::getline(std::cin, date_of_birth);
-        //std:cout << first_name <<  last_name << date_of_birth << "\n";
-        printf("First Name: %s\nLast Name: %s\nDOB: %s\n",first_name.c_str(),last_name.c_str(),date_of_birth.c_str());
+        if (isValidString(last_name)){
+            std::cout << "Please enter your date of birth (DD/MM/YY)!\n";
+            //std::cin >> date_of_birth;
+            std::getline(std::cin, date_of_birth);
+            //std:cout << first_name <<  last_name << date_of_birth << "\n";
+            printf("First Name: %s\nLast Name: %s\nDOB: %s\n",first_name.c_str(),last_name.c_str(),date_of_birth.c_str());
+        }
+        else{
+            std::cout << "\nLast Name cannot contain integers!\n";
+        }
     }
     else{
-        std::cout << "\nName cannot contain integers!\n";
+        std::cout << "\nFirst Name cannot contain integers!\n";
     }
 
 }
