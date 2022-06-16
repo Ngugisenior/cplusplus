@@ -31,7 +31,7 @@ int main(){
         printf("First Name: %s\nLast Name: %s\nDOB: %s\n",first_name.c_str(),last_name.c_str(),date_of_birth.c_str());
     }
     else{
-        std::cout << "\nName cannot contain integers";
+        std::cout << "\nName cannot contain integers!\n";
     }
 
 }
