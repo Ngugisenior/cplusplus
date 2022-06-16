@@ -1,10 +1,11 @@
 #include <iostream>
+#include <string>
 #include <chrono>
 
 using namespace std;
 
 int main(){
-    string first_name, last_name, date_of_birth;
+    std::string first_name, last_name, date_of_birth;
     std::cout << "Please enter your first name!\n";
     //std::cin >> first_name;
     std::getline(std::cin, first_name);
