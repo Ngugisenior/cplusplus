@@ -38,5 +38,5 @@ int main(){
     else{
         std::cout << "\nFirst Name cannot contain integers!\n";
     }
-
+    return 0
 }
