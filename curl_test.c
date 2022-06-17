@@ -11,5 +11,25 @@ int main (){
     d). cleanup after transfer
     */
 
-    printf("Hello World!");
+    printf("Hello World!\n");
+
+    CURL *curl;
+    CURLcode res;
+
+    curl = curl_easy_init();
+
+    if(curl){
+        curl_easy_set_opt(curl, CURLOPT_URL, 'http:localhost:80');
+
+        res=curl_easy_perform(curl);
+
+        // Check for errors
+        if(res != CURL_OK){
+            fprintf(stderr, "curl_easy_perform() failed: %s\n", curl_easy_sterror(res));
+
+            /* Always cleanup */
+            curl_easy_cleanup(curl);
+        }
+
+    }
 }
