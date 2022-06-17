@@ -26,7 +26,7 @@ int main (){
 
         // Check for errors
         if(res != CURLE_OK){
-            fprintf(stderr, "curl_easy_perform() failed: %s\n", curl_easy_sterror(res));
+            fprintf(stderr, "curl_easy_perform() failed: %s\n", curl_easy_strerror(res));
 
             /* Always cleanup */
             curl_easy_cleanup(curl);
