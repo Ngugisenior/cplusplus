@@ -19,7 +19,7 @@ int main (){
     curl = curl_easy_init();
 
     if(curl){
-        curl_easy_set_opt(curl, CURLOPT_URL, "http:localhost:80");
+        curl_easy_setopt(curl, CURLOPT_URL, "http:localhost:80");
 
 
         res=curl_easy_perform(curl);
