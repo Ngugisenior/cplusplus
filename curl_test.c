@@ -2,7 +2,6 @@
 #include <curl/curl.h>
 
 
-
 int main (){
     /*
     a). create easy handle for transfer
