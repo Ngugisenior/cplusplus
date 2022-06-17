@@ -1,7 +1,7 @@
+#include <stdio.h>
 #include <curl/curl.h>
-#include <iostream>
 
-using namespace std;
+
 
 int main (){
     /*
@@ -11,5 +11,5 @@ int main (){
     d). cleanup after transfer
     */
 
-    std::cout << "Hello World!";
+    printf("Hello World!");
 }
